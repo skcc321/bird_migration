@@ -1,14 +1,14 @@
 # BirdMigration
 Let's assume you have 3 pending migrations with no order.
 
- Status   Migration ID    Migration Name
+ Status |  Migration ID    Migration Name
 --------------------------------------------------
-   up     20181029224028  Create users
-  down    20181029224048  Create add surname to users
-   up     20181029224059  Create posts
-   up     20181029224112  Create test los
-  down    20181029224146  Create lalas
-  down    20181029224451  Lololo
+   up   |  20181029224028  Create users
+  down  |  20181029224048  Create add surname to users
+   up   |  20181029224059  Create posts
+   up   |  20181029224112  Create test los
+  down  |  20181029224146  Create lalas
+  down  |  20181029224451  Lololo
 
 And some of them (let it be '20181029224451  Lololo') is broken.
 And you are going to deploy that code somewhere.
