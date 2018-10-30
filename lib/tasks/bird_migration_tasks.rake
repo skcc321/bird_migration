@@ -15,13 +15,15 @@ namespace :birds do
 
     begin
       ActiveRecord::Migrator.new(:up, pending_migratios).migrate
-    ensure
+    rescue StandardErrror => e
 
       puts "Oops, something went wrong! Don't worry, all the changes will be reverted!!!"
 
       pending_migratios.reverse_each do |migration|
         ActiveRecord::Migrator.new(:down, [migration]).migrate
       end
+
+      raise(e)
     end
   end
 end
