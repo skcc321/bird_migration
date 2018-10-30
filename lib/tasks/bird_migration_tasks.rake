@@ -15,7 +15,7 @@ namespace :birds do
 
     begin
       ActiveRecord::Migrator.new(:up, pending_migratios).migrate
-    rescue StandardErrror => e
+    rescue => e
 
       puts "Oops, something went wrong! Don't worry, all the changes will be reverted!!!"
 
