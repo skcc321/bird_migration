@@ -1,7 +1,7 @@
 # BirdMigration
 Let's assume you have 3 pending migrations with no order.
 
- Status   Migration ID    Migration Name
+ Status   Migration ID    Migration Name\n
 --------------------------------------------------
    up     20181029224028  Create users
   down    20181029224048  Create add surname to users
